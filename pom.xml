@@ -91,6 +91,8 @@
 		<module>dept-8001</module>
 		<module>provider-demo</module>
 		<module>consumer</module>
-		
+
+		<module>common-api-demo</module>
+		<module>consumer-feign-demo</module>
 	</modules>
 </project>
