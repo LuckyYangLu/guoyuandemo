@@ -10,7 +10,7 @@
 <dependencies>
 		<dependency><!-- 自己定义的api -->
 			<groupId>com.guoyuan</groupId>
-             <artifactId>microspringcloud</artifactId>
+             <artifactId>common-api-demo</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>

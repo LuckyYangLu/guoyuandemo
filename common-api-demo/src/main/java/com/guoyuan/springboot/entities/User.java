@@ -6,7 +6,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
-
+/**
+ * User实体类
+ * @author Lu
+ *
+ */
 @SuppressWarnings("serial")
 @NoArgsConstructor
 @Data
