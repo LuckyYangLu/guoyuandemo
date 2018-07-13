@@ -11,6 +11,11 @@ public class ProviderController {
 	@RequestMapping(value="/provide",method=RequestMethod.GET)
 	@HystrixCommand(fallbackMethod="processHytrixFallBack")
 	public String getRepsonse(){
+		/*int a=1;
+		if(1==a){
+			throw new RuntimeException("测试熔断");
+		}*/
+		
 		return "watching video .....";
 	}
 	

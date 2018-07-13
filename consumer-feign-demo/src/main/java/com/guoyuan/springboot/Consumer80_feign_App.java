@@ -9,7 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 
 @SpringBootApplication
-@EnableEurekaClient
+@EnableEurekaClient//本服务启动后会自动注册进eureka服务中
 @EnableFeignClients(basePackages= {"com.guoyuan.springboot"})
 @ComponentScan("com.guoyuan.springboot")
 public class Consumer80_feign_App{
