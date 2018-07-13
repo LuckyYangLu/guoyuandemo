@@ -94,5 +94,7 @@
 
 		<module>common-api-demo</module>
 		<module>consumer-feign-demo</module>
+		<module>dashboard-demo</module>
+		<module>zuul-gateway-demo</module>
 	</modules>
 </project>

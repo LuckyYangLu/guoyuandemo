@@ -1,0 +1,30 @@
+server: 
+  port: 9527
+ 
+spring: 
+  application:
+    name: microservicecloud-zuul-gateway
+ 
+eureka: 
+  client: 
+    service-url: 
+      defaultZone: http://eureka7001.com:7001/eureka  
+  instance:
+    instance-id: zuul-gateway-9527
+    prefer-ip-address: true 
+ 
+ 
+zuul: 
+  #ignored-services: 
+  #prefix: /guoyuan
+  ignored-services: "*"
+  routes: 
+    mydept.serviceId: provider-8001
+    mydept.path: /micro/**
+ 
+info:
+  app.name: guoyuan-microservice
+  company.name: GUOYUAN SECURITIES 
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
+
