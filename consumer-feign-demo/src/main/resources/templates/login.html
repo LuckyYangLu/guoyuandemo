@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<!-- Hello!<span th:text="'用户名：' +${userInfo.userName}">请先登录</span> -->
+
+ <form action="#" th:action="@{/login}" method="get">  
+   用户名：<input type="text" name="userName"  placeholder="请填写用户名"/>  
+   密  码：<input type="text" name="userPwd"    placeholder="请填写用户密码"/>  
+   <input type="submit" value="提交"/>  
+  </form> 
+<!-- th:field="*{userName}"
+th:field="*{userPassword}" -->
+
+<div th:if="${userInfo != null}">  
+	Hello!<span th:text="'用户名：' +${userInfo.userName}+${mess.info}"></span>
+</div>
+<div th:if="${userInfo == null}">
+	<span>Hello!游客请先登录</span>
+</div>
+
+</body>
+</html>

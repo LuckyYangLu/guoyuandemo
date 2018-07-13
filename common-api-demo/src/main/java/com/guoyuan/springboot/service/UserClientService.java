@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @FeignClient(value = "MICROSERVICECLOUD-PROVIDER-8001")
 public interface UserClientService {
 	
-	@RequestMapping(value = "/provide", method = RequestMethod.GET)
+	@RequestMapping(value="/provide",method=RequestMethod.GET)
 	public String getRepsonse();
 	
 
