@@ -9,10 +9,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * @author Lu
  *
  */
-@FeignClient(value = "MICROSERVICECLOUD-PROVIDER-8001")
+
+@FeignClient(value = "MICROSERVICECLOUD-ZUUL-GATEWAY")//利用zuul代理
+//@FeignClient(value = "MICROSERVICECLOUD-PROVIDER-8001")
 public interface UserClientService {
 	
-	@RequestMapping(value="/provide",method=RequestMethod.GET)
+	//@RequestMapping(value="/provide",method=RequestMethod.GET)
+	@RequestMapping(value="/guoyuan/provide",method=RequestMethod.GET)
 	public String getRepsonse();
 	
 

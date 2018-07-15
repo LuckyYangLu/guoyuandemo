@@ -10,7 +10,7 @@ eureka:
     service-url: 
       defaultZone: http://eureka7001.com:7001/eureka  
   instance:
-    instance-id: zuul-gateway-9527
+    instance-id: gateway-9527.com
     prefer-ip-address: true 
  
  
@@ -20,7 +20,7 @@ zuul:
   ignored-services: "*"
   routes: 
     mydept.serviceId: provider-8001
-    mydept.path: /micro/**
+    mydept.path: /guoyuan/**
  
 info:
   app.name: guoyuan-microservice
